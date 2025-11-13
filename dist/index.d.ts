@@ -89,5 +89,4 @@ export declare const SWITCH_ANIMATION_DURATION = 150;
  * ```
  */
 export declare const Switch: React.FC<SwitchProps>;
-export default Switch;
 //# sourceMappingURL=index.d.ts.map

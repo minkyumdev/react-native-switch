@@ -53,7 +53,7 @@ No additional setup required for Android.
 ```tsx
 import React, { useState } from 'react';
 import { View } from 'react-native';
-import Switch from '@minkyumdev/react-native-switch';
+import { Switch } from '@minkyumdev/react-native-switch';
 
 function App() {
   const [isEnabled, setIsEnabled] = useState(false);
@@ -183,7 +183,7 @@ See the [Props](#props) table above for detailed information.
 #### Example
 
 ```tsx
-import Switch from '@minkyumdev/react-native-switch';
+import { Switch } from '@minkyumdev/react-native-switch';
 
 function MyComponent() {
   const [enabled, setEnabled] = useState(false);

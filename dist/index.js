@@ -134,5 +134,4 @@ export var Switch = React.memo(function (_a) {
         prevProps.enableHaptics === nextProps.enableHaptics &&
         prevProps.onValueChange === nextProps.onValueChange);
 });
-export default Switch;
 //# sourceMappingURL=index.js.map
