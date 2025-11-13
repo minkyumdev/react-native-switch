@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Switch } from './dist';
 
 function App() {
@@ -10,7 +9,7 @@ function App() {
   const [switch4, setSwitch4] = useState(false);
 
   return (
-    <SafeAreaProvider>
+    <View style={{ flex: 1 }}>
       <View style={styles.container}>
         <Text style={styles.title}>React Native Switch</Text>
 
@@ -55,7 +54,7 @@ function App() {
           />
         </View>
       </View>
-    </SafeAreaProvider>
+    </View>
   );
 }
 
