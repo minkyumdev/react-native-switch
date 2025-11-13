@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import Switch from './dist';
+import { Switch } from './dist';
 
 function App() {
   const [switch1, setSwitch1] = useState(false);
