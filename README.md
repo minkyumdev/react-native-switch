@@ -5,6 +5,7 @@ A customizable and animated switch component for React Native built with `react-
 ## 🎬 Demo
 
 https://github.com/user-attachments/assets/30d71b88-dfc8-416a-bb13-43ecae023a50
+
 https://github.com/user-attachments/assets/e34d5426-d42e-4103-9b49-f70a306d3785
 
 
