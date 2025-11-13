@@ -2,6 +2,11 @@
 
 A customizable and animated switch component for React Native built with `react-native-reanimated`.
 
+
+https://github.com/user-attachments/assets/30d71b88-dfc8-416a-bb13-43ecae023a50
+
+
+
 ## Features
 
 - 🎨 Fully customizable colors and sizes
