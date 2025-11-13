@@ -1,0 +1,21 @@
+# React Native
+android/
+ios/
+__tests__/
+*.log
+*.lock
+
+# Development
+App.tsx
+index.js
+node_modules/
+.vscode/
+.idea/
+
+# Build artifacts (we want to include dist/)
+# dist/ is included in package.json files
+
+# Misc
+.DS_Store
+*.pem
+

@@ -1,97 +1,209 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# @minkyum/react-native-switch
 
-# Getting Started
+A customizable and animated switch component for React Native built with `react-native-reanimated`.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## Features
 
-## Step 1: Start Metro
+- 🎨 Fully customizable colors and sizes
+- ✨ Smooth animations powered by react-native-reanimated
+- 🎯 Customizable thumb scale animation
+- 📳 Haptic feedback support (optional)
+- ♿ Accessible and disabled state support
+- 📱 Works on both iOS and Android
+- 💪 Written in TypeScript with full type definitions
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## Installation
 
-To start the Metro dev server, run the following command from the root of your React Native project:
-
-```sh
-# Using npm
-npm start
-
-# OR using Yarn
-yarn start
+```bash
+npm install @minkyum/react-native-switch
+# or
+yarn add @minkyum/react-native-switch
 ```
 
-## Step 2: Build and run your app
+### Peer Dependencies
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+This library requires the following peer dependencies:
 
-### Android
+- `react` (>=16.8.0)
+- `react-native` (>=0.60.0)
+- `react-native-reanimated` (>=2.0.0)
+- `@mhpdev/react-native-haptics` (optional, for haptic feedback)
 
-```sh
-# Using npm
-npm run android
+Make sure to install these dependencies in your project:
 
-# OR using Yarn
-yarn android
+```bash
+npm install react-native-reanimated
+npm install @mhpdev/react-native-haptics
 ```
 
-### iOS
+### iOS Setup
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+For iOS, you need to install pods:
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
+```bash
+cd ios && pod install
 ```
 
-Then, and every time you update your native dependencies, run:
+### Android Setup
 
-```sh
-bundle exec pod install
+No additional setup required for Android.
+
+## Usage
+
+```tsx
+import React, { useState } from 'react';
+import { View } from 'react-native';
+import Switch from '@minkyum/react-native-switch';
+
+function App() {
+  const [isEnabled, setIsEnabled] = useState(false);
+
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Switch
+        value={isEnabled}
+        onValueChange={setIsEnabled}
+        activeColor="#34C759"
+        inactiveColor="#E5E5EA"
+      />
+    </View>
+  );
+}
 ```
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+## Props
 
-```sh
-# Using npm
-npm run ios
+| Prop                 | Type                             | Default     | Description                                                    |
+| -------------------- | -------------------------------- | ----------- | -------------------------------------------------------------- |
+| `value`              | `boolean`                        | `false`     | Current state of the switch (on/off)                           |
+| `onValueChange`      | `(value: boolean) => void`       | -           | Callback function called when the switch value changes         |
+| `disabled`           | `boolean`                        | `false`     | Whether the switch is disabled                                 |
+| `activeColor`        | `string`                         | `'#34C759'` | Color of the switch when active (on)                           |
+| `inactiveColor`      | `string`                         | `'#F6F6F6'` | Color of the switch when inactive (off)                        |
+| `thumbColor`         | `string`                         | `'#FFFFFF'` | Color of the thumb (the circular element)                      |
+| `size`               | `'small' \| 'medium' \| 'large'` | `'small'`   | Predefined size of the switch (used when width/height not set) |
+| `width`              | `number`                         | -           | Custom width of the switch (takes priority over size)          |
+| `height`             | `number`                         | -           | Custom height of the switch (takes priority over size)         |
+| `thumbSize`          | `number`                         | -           | Custom size of the thumb (auto-calculated if not provided)     |
+| `thumbScaleInactive` | `number`                         | `0.8`       | Scale value of the thumb when inactive (off state)             |
+| `enableHaptics`      | `boolean`                        | `true`      | Whether to enable haptic feedback on toggle                    |
+| `style`              | `StyleProp<ViewStyle>`           | -           | Additional style for the switch container                      |
+| `testID`             | `string`                         | -           | Test ID for testing purposes                                   |
 
-# OR using Yarn
-yarn ios
+## Examples
+
+### Basic Usage
+
+```tsx
+<Switch value={isEnabled} onValueChange={setIsEnabled} />
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+### Custom Colors
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+```tsx
+<Switch
+  value={isEnabled}
+  onValueChange={setIsEnabled}
+  activeColor="#FF3B30"
+  inactiveColor="#C7C7CC"
+  thumbColor="#FFFFFF"
+/>
+```
 
-## Step 3: Modify your app
+### Custom Size
 
-Now that you have successfully run the app, let's make changes!
+```tsx
+// Using predefined sizes
+<Switch value={isEnabled} onValueChange={setIsEnabled} size="large" />
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+// Using custom width and height
+<Switch
+  value={isEnabled}
+  onValueChange={setIsEnabled}
+  width={80}
+  height={40}
+/>
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+// Custom width, height, and thumbSize
+<Switch
+  value={isEnabled}
+  onValueChange={setIsEnabled}
+  width={100}
+  height={50}
+  thumbSize={35}
+/>
+```
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+### Disabled State
 
-## Congratulations! :tada:
+```tsx
+<Switch value={isEnabled} onValueChange={setIsEnabled} disabled={true} />
+```
 
-You've successfully run and modified your React Native App. :partying_face:
+### Disable Haptics
 
-### Now what?
+```tsx
+<Switch value={isEnabled} onValueChange={setIsEnabled} enableHaptics={false} />
+```
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+### Custom Thumb Scale
 
-# Troubleshooting
+```tsx
+// Custom scale for inactive state (default is 0.8)
+<Switch
+  value={isEnabled}
+  onValueChange={setIsEnabled}
+  thumbScaleInactive={0.7} // Thumb will be smaller when off
+/>
+```
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+## Development
 
-# Learn More
+```bash
+# Install dependencies
+npm install
 
-To learn more about React Native, take a look at the following resources:
+# Build the library
+npm run build
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+# Watch mode for development
+npm run build:watch
+```
+
+## API Reference
+
+### Switch Component
+
+The main component exported from this library.
+
+#### Props
+
+See the [Props](#props) table above for detailed information.
+
+#### Example
+
+```tsx
+import Switch from '@minkyum/react-native-switch';
+
+function MyComponent() {
+  const [enabled, setEnabled] = useState(false);
+
+  return (
+    <Switch
+      value={enabled}
+      onValueChange={setEnabled}
+      size="medium"
+      activeColor="#34C759"
+      inactiveColor="#E5E5EA"
+    />
+  );
+}
+```
+
+## License
+
+MIT
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
