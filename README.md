@@ -1,4 +1,4 @@
-# @minkyum/react-native-switch
+# @minkyumdev/react-native-switch
 
 A customizable and animated switch component for React Native built with `react-native-reanimated`.
 
@@ -15,9 +15,9 @@ A customizable and animated switch component for React Native built with `react-
 ## Installation
 
 ```bash
-npm install @minkyum/react-native-switch
+npm install @minkyumdev/react-native-switch
 # or
-yarn add @minkyum/react-native-switch
+yarn add @minkyumdev/react-native-switch
 ```
 
 ### Peer Dependencies
@@ -53,7 +53,7 @@ No additional setup required for Android.
 ```tsx
 import React, { useState } from 'react';
 import { View } from 'react-native';
-import Switch from '@minkyum/react-native-switch';
+import Switch from '@minkyumdev/react-native-switch';
 
 function App() {
   const [isEnabled, setIsEnabled] = useState(false);
@@ -183,7 +183,7 @@ See the [Props](#props) table above for detailed information.
 #### Example
 
 ```tsx
-import Switch from '@minkyum/react-native-switch';
+import Switch from '@minkyumdev/react-native-switch';
 
 function MyComponent() {
   const [enabled, setEnabled] = useState(false);
