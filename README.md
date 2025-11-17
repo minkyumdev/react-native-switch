@@ -10,9 +10,18 @@ A production-ready, customizable React Native switch component built with `react
 
 ## 🎬 Demo
 
-https://github.com/user-attachments/assets/30d71b88-dfc8-416a-bb13-43ecae023a50
-
-https://github.com/user-attachments/assets/e34d5426-d42e-4103-9b49-f70a306d3785
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <strong>iOS</strong><br/>
+      <video src="./assets/ios.mp4" width="100%" controls autoplay loop muted playsinline></video>
+    </td>
+    <td width="50%" align="center">
+      <strong>Android</strong><br/>
+      <video src="./assets/android.mp4" width="100%" controls autoplay loop muted playsinline></video>
+    </td>
+  </tr>
+</table>
 
 ## Features
 
