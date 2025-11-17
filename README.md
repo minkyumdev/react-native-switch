@@ -1,16 +1,18 @@
 # @minkyumdev/react-native-switch
 
-A customizable and animated switch component for React Native built with `react-native-reanimated`.
+> A highly customizable, animated switch/toggle component for React Native with smooth animations, haptic feedback, and full TypeScript support. Perfect for iOS and Android apps.
+
+[![npm version](https://img.shields.io/npm/v/@minkyumdev/react-native-switch.svg)](https://www.npmjs.com/package/@minkyumdev/react-native-switch)
+[![npm downloads](https://img.shields.io/npm/dt/@minkyumdev/react-native-switch.svg)](https://www.npmjs.com/package/@minkyumdev/react-native-switch)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A production-ready, customizable React Native switch component built with `react-native-reanimated` for smooth 60fps animations. Ideal for settings screens, feature toggles, and any UI that requires a modern switch component.
 
 ## 🎬 Demo
 
 https://github.com/user-attachments/assets/30d71b88-dfc8-416a-bb13-43ecae023a50
 
 https://github.com/user-attachments/assets/e34d5426-d42e-4103-9b49-f70a306d3785
-
-
-
-
 
 ## Features
 
@@ -214,6 +216,51 @@ function MyComponent() {
 
 MIT
 
+## Why Choose This Library?
+
+- ✅ **Smooth Animations**: Powered by `react-native-reanimated` for 60fps animations
+- ✅ **Fully Customizable**: Control colors, sizes, thumb scale, and more
+- ✅ **TypeScript Support**: Full type definitions included
+- ✅ **Haptic Feedback**: Optional haptic feedback for better UX
+- ✅ **Cross-Platform**: Works seamlessly on iOS and Android
+- ✅ **Lightweight**: Minimal dependencies, optimized bundle size
+- ✅ **Production Ready**: Used in real-world applications
+
+## Common Use Cases
+
+- Settings screens and preference toggles
+- Feature flags and A/B testing switches
+- Notification settings
+- Dark mode toggles
+- Privacy settings
+- Any boolean state management UI
+
+## Related Packages
+
+Looking for other React Native components? Check out:
+
+- [react-native-reanimated](https://github.com/software-mansion/react-native-reanimated) - Animation library
+- [@mhpdev/react-native-haptics](https://github.com/mhevery/react-native-haptics) - Haptic feedback
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Support
+
+If you find this library helpful, please consider:
+
+- ⭐ Starring the repository
+- 🐛 Reporting bugs
+- 💡 Suggesting new features
+- 📖 Improving documentation
+
+## License
+
+MIT © [minkyumdev](https://github.com/minkyumdev)
