@@ -14,11 +14,11 @@ A production-ready, customizable React Native switch component built with `react
   <tr>
     <td width="50%" align="center">
       <strong>iOS</strong><br/>
-      <video src="./assets/ios.mp4" width="100%" controls autoplay loop muted playsinline></video>
+      <img src="./assets/ios.gif" width="100%" alt="iOS Demo" />
     </td>
     <td width="50%" align="center">
       <strong>Android</strong><br/>
-      <video src="./assets/android.mp4" width="100%" controls autoplay loop muted playsinline></video>
+      <img src="./assets/android.gif" width="100%" alt="Android Demo" />
     </td>
   </tr>
 </table>
