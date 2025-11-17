@@ -1,7 +1,7 @@
 {
   "name": "@minkyumdev/react-native-switch",
   "version": "1.0.1",
-  "description": "A customizable switch component for React Native",
+  "description": "A highly customizable, animated switch/toggle component for React Native with smooth animations, haptic feedback, and TypeScript support. Built with react-native-reanimated for optimal performance.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -12,10 +12,23 @@
   ],
   "keywords": [
     "react-native",
+    "react-native-switch",
     "switch",
     "toggle",
-    "component",
-    "ui"
+    "toggle-switch",
+    "animated-switch",
+    "customizable-switch",
+    "react-native-toggle",
+    "react-native-component",
+    "ui",
+    "ui-component",
+    "mobile",
+    "ios",
+    "android",
+    "haptic-feedback",
+    "reanimated",
+    "typescript",
+    "expo"
   ],
   "author": "",
   "license": "MIT",
